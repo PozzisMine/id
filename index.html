@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube → ID</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin: 20px;
+    }
+
+    textarea {
+      width: 95%;
+      height: 220px;
+      font-size: 14px;
+    }
+
+    button {
+      padding: 10px 15px;
+      margin: 8px;
+      cursor: pointer;
+    }
+
+    #result {
+      white-space: pre-wrap;
+      text-align: left;
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<h2>YouTube URL → ID Extractor</h2>
+
+<textarea id="input" placeholder="Вставь ссылки (каждая с новой строки)"></textarea>
+
+<br>
+
+<button onclick="convert()">Конвертировать</button>
+<button onclick="copyResult()">Копировать</button>
+<button onclick="clearAll()">Очистить</button>
+
+<div id="result"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
