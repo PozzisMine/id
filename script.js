@@ -31,7 +31,7 @@ function convert() {
         let id = getVideoId(url);
 
         if (id) {
-            result.push(`'${id}'`);
+            result.push(`'${id}',`);
         }
     }
 
